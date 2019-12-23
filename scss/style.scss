@@ -13,8 +13,8 @@
 html {
   height: 100%;
   font-size: 10px;
-  width: 98%;
-  margin: 12px auto;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -289,6 +289,7 @@ nav {
 
 .what {
   width: 980px;
+
   margin: 0 auto;
   &__arc {
     stroke: rgb(255, 255, 255);
@@ -327,7 +328,7 @@ nav {
 }
 
 .house {
-  width: 540px;
+  max-width: 48%;
   // height: 370px;
   background-color: rgba(35, 35, 35, 0.9);
   padding: 50px 30px;
@@ -350,7 +351,7 @@ nav {
   }
   &--sea {
     position: relative;
-    left: 52%;
+    right: -50%;
   }
 }
 
@@ -374,6 +375,8 @@ nav {
   }
   &__p {
     line-height: 2rem;
+    max-height: 100px;
+    overflow: hidden;
     &::before {
       display: inline-block;
       content: url(../img/quote.svg);
